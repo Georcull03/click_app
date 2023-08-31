@@ -2,6 +2,7 @@ from pathlib import Path
 
 import click
 
+
 @click.command()
 @click.argument("path")
 def cli(path):
@@ -14,6 +15,7 @@ def cli(path):
         click.echo(f"{entry.name:{len(entry.name) + 5}}", nl=False)
 
     click.echo()
+
 
 if __name__ == "__main__":
     cli()

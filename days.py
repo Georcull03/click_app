@@ -13,7 +13,9 @@ import click
             "Friday",
             "Saturday",
             "Sunday",
-        ]
+        ],
+        # Line can be used to allow value if written in different case
+        # case_sensitive=False,
     ),
 )
 def cli(weekday):

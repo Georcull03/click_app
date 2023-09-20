@@ -5,6 +5,7 @@ import click
 @click.argument("a", type=click.FLOAT)
 @click.argument("b", type=click.FLOAT)
 def add(a, b):
+    """Adds two floats"""
     click.echo(f"{a} + {b} = {a + b}")
 
 
@@ -12,6 +13,7 @@ def add(a, b):
 @click.argument("a", type=click.FLOAT)
 @click.argument("b", type=click.FLOAT)
 def subtract(a, b):
+    """Subtracts two floats"""
     click.echo(f"{a} - {b} = {a - b}")
 
 
@@ -19,6 +21,7 @@ def subtract(a, b):
 @click.argument("a", type=click.FLOAT)
 @click.argument("b", type=click.FLOAT)
 def multiply(a, b):
+    """Multiplies two floats"""
     click.echo(f"{a} * {b} = {a * b}")
 
 
@@ -26,4 +29,5 @@ def multiply(a, b):
 @click.argument("a", type=click.FLOAT)
 @click.argument("b", type=click.FLOAT)
 def divide(a, b):
+    """Divides two floats"""
     click.echo(f"{a} / {b} = {a / b}")

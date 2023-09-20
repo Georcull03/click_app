@@ -17,6 +17,12 @@ import click
     ),
 )
 def cli(paths, long):
+    # For documenting arguments in click add docstring to the underlying function.
+    # Also remove the help parameter within click.command()
+    # E.g. """List the content of one or more directory
+    #
+    # PATHS is one or more directory paths whose content will be listed
+    # """
     for i, path in enumerate(paths):
         if len(paths) > 1:
             click.echo(f"/{path}/:")
